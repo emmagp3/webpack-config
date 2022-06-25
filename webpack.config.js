@@ -21,9 +21,10 @@ module.exports = {
   
   optimization: {},
   
-  plugins: [new HtmlWebpackPlugin({
-    title: 'Mi WebPack App,',
-    // filename: 'index.html',
-    template:'src/index.html',  // Toma como plantilla nuestro html dentro de src
-  })],
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Mi webpack app',
+      template: './src/index.html',
+    }),
+  ],
 }
