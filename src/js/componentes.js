@@ -1,7 +1,7 @@
 import '../css/componentes.css';
 // import webpackLogo from '../assets/img/webpack-logo.png';
 
-export const saludar = (nombre) => {
+export const saludar = (nombre = 'Sin nombre') => {
   console.log('Creando h1');
   const h1 = document.createElement('h1');
   h1.innerText = `¡Hola, ${nombre}!`;
